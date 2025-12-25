@@ -10,13 +10,13 @@
 cd /mnt/d/DevOps/DZ/24_k8s
 ```
 
-Створи файл з секретами (не комітиться):
+Створити файл з секретами (не комітиться):
 
 ```bash
 cp k8s/.env.example k8s/.env
 ```
 
-Відредагувати `k8s/.env` і заповни:
+Відредагувати `k8s/.env` і заповнити:
 - `DOCKERHUB_EMAIL`
 - `DOCKERHUB_PAT` (Docker Hub Personal Access Token)
 
