@@ -94,7 +94,14 @@ docker build -t svitlanakizilpinar/python_random_private:1.0 .
 
 ## 9) Скріншоти (папка screens)
 
-- [screens/1.0_login.png](../screens/1.0_login.png) — `docker login` (через PAT, якщо 2FA увімкнено)
-- [screens/1.1_building_image.png](../screens/1.1_building_image.png) — успішний `docker build`
-- [screens/1.2_push_image.png](../screens/1.2_push_image.png) — успішний `docker push`
-- [screens/1.3_private_repo.png](../screens/1.3_private_repo.png) — Docker Hub репозиторій з **Visibility: Private** і тегом образу
+`docker login` (через PAT, якщо 2FA увімкнено):
+![screens/1.0_login.png](../screens/1.0_login.png) 
+
+Успішний `docker build`:
+![screens/1.1_building_image.png](../screens/1.1_building_image.png)
+
+Успішний `docker push`:
+![screens/1.2_push_image.png](../screens/1.2_push_image.png)
+
+Docker Hub репозиторій з **Visibility: Private** і тегом образу:
+![screens/1.3_private_repo.png](../screens/1.3_private_repo.png)
