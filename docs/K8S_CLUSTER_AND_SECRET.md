@@ -1,6 +1,6 @@
 # HW24 — Kubernetes (kind): Cluster + Secret (через k8s/deploy.sh)
 
-Цей файл — коротка інструкція **тільки** для скрипта [k8s/deploy.sh](k8s/deploy.sh): він створює kind-кластер, перемикає контекст, створює `imagePullSecret` для приватного Docker Hub образу і застосовує Deployment/Service.
+Цей файл — коротка інструкція **тільки** для скрипта [k8s/deploy.sh](../k8s/deploy.sh): він створює kind-кластер, перемикає контекст, створює `imagePullSecret` для приватного Docker Hub образу і застосовує Deployment/Service.
 
 ## 1) Підготовка (.env)
 
@@ -85,8 +85,17 @@ kind get clusters
 
 ## 6) Скріншоти (папка screens)
 
-- [screens/2.0_check_clusters.png](screens/2.0_check_clusters.png) — перевірка кластера: `kind get clusters`, `kubectl cluster-info` (і приклад видалення зайвого кластера)
-- [screens/2.1_create_cluster_secret.png](screens/2.1_create_cluster_secret.png) — перший запуск `bash k8s/deploy.sh` (створення кластера + secret)
-- [screens/2.2_start_after_create_cluster_secret.png](screens/2.2_start_after_create_cluster_secret.png) — повторний запуск (secret вже існує)
-- [screens/2.3_check_regcred.png](screens/2.3_check_regcred.png) — перевірка `kubectl get/describe secret regcred`
-- [screens/2.4_try_pull_image_by_secret.png](screens/2.4_try_pull_image_by_secret.png) — `pull-test` успішно стягує приватний image
+### Перевірка кластера: `kind get clusters`, `kubectl cluster-info` (і приклад видалення зайвого кластера):
+![screens/2.0_check_clusters.png](../screens/2.0_check_clusters.png)
+
+### Перший запуск `bash k8s/deploy.sh` (створення кластера + secret):
+![screens/2.1_create_cluster_secret.png](../screens/2.1_create_cluster_secret.png)
+
+### Повторний запуск (secret вже існує):
+![screens/2.2_start_after_create_cluster_secret.png](../screens/2.2_start_after_create_cluster_secret.png)
+
+### Перевірка `kubectl get/describe secret regcred`:
+[screens/2.3_check_regcred.png](../screens/2.3_check_regcred.png)
+
+### `pull-test` успішно стягує приватний image
+[screens/2.4_try_pull_image_by_secret.png](../screens/2.4_try_pull_image_by_secret.png)
