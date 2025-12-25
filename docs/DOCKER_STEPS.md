@@ -13,14 +13,14 @@ cd devops_soft/for_HW24
 
 ## 2) Створення приватного репозиторію в Docker Hub
 
-1) Відкрий Docker Hub: https://hub.docker.com
+1) Відкрити Docker Hub: https://hub.docker.com
 
-2) Створи репозиторій:
-- Натисни **Create repository**
+2) Створити репозиторій:
+- Натиснути **Create repository**
 - **Name**: `python_random_private` (або інша назва, але тоді потрібно змінити `IMAGE_REPO` у скрипті)
 - **Visibility**: **Private**
 
-3) (Рекомендовано) Створи **Personal Access Token (PAT)**:
+3) (Рекомендовано) Створити **Personal Access Token (PAT)**:
 - Docker Hub → **Account Settings** → **Security** → **New Access Token**
 - Права: `Read/Write` достатньо для `docker push`
 
@@ -47,7 +47,7 @@ docker login -u svitlanakizilpinar
 bash ./build_and_push.sh
 ```
 
-> Репозиторій у Docker Hub має бути **Private**. Для `docker login` використовуй **Personal Access Token (PAT)** як пароль (особливо якщо ввімкнений 2FA).
+> Репозиторій у Docker Hub має бути **Private**. Для `docker login` використовуйте **Personal Access Token (PAT)** як пароль (особливо якщо ввімкнений 2FA).
 
 ## 5) Які команди виконує скрипт (довідково)
 
@@ -92,14 +92,9 @@ docker build -t svitlanakizilpinar/python_random_private:1.0 .
 
 > Якщо ввімкнений 2FA, потрібно використовувати **Personal Access Token** (PAT) замість пароля.
 
-## 9) Що прикріпити у здачу (для частини Docker)
-- Код Dockerfile: файл `for_HW24/Dockerfile`
-- Скрін Docker Hub репозиторію з тегом (наприклад `1.0`)
-- Логи/скрін з успішним `docker push`
+## 9) Скріншоти (папка screens)
 
-## 10) Скріншоти (папка screens)
-
-- [screens/1.0_login.png](screens/1.0_login.png) — `docker login` (через PAT, якщо 2FA увімкнено)
-- [screens/1.1_building_image.png](screens/1.1_building_image.png) — успішний `docker build`
-- [screens/1.2_push_image.png](screens/1.2_push_image.png) — успішний `docker push`
-- [screens/1.3_private_repo.png](screens/1.3_private_repo.png) — Docker Hub репозиторій з **Visibility: Private** і тегом образу
+- [screens/1.0_login.png](../screens/1.0_login.png) — `docker login` (через PAT, якщо 2FA увімкнено)
+- [screens/1.1_building_image.png](../screens/1.1_building_image.png) — успішний `docker build`
+- [screens/1.2_push_image.png](../screens/1.2_push_image.png) — успішний `docker push`
+- [screens/1.3_private_repo.png](../screens/1.3_private_repo.png) — Docker Hub репозиторій з **Visibility: Private** і тегом образу
