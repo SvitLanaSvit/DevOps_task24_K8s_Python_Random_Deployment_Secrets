@@ -1,0 +1,36 @@
+Створіть deployment із Python-скриптом (спочатку потрібно створити для нього Docker-образ і завантажити його у свій приватний репозиторій Docker Hub), який повертає випадковий рядок. Скрипт візьміть з GitLab — https://gitlab.com/dan-it/groups/devops_soft/-/tree/main/for_HW24?ref_type=heads
+
+Створіть для нього сервіс.
+
+Підключіться до сервісу та виконайте запити, щоб побачити відповідь від Python-скрипту.
+
+Переконайтесь, що сервіс розподіляє трафік між різними подами.
+
+
+ENG:
+
+
+
+Create deployment with python script(need to create docker image for it first and push it to your private docker hub registry) which returns random string. Script take from GitLab - https://gitlab.com/dan-it/groups/devops_soft/-/tree/main/for_HW24?ref_type=heads
+
+Create service for it
+
+Connect to service and perform requests to see python script response
+
+Make sure that service route traffic to a different pods
+
+
+
+
+
+Формат здачі ДЗ:
+
+1. Код Dockerfile
+
+2. Скрін імеджа у вашому Docker Hub репозиторії
+
+3. Код створення кластера
+
+4. Код усіх необхідних маніфестів
+
+5. Скріни перевірки, як відпрацьовує скрипт й відображає зміст з різних подів

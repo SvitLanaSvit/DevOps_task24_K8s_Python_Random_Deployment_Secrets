@@ -1,0 +1,7 @@
+# Secrets (do not commit)
+/k8s/.env
+/k8s/dockerhub-secret.yaml
+
+# OS / editor
+.DS_Store
+Thumbs.db
