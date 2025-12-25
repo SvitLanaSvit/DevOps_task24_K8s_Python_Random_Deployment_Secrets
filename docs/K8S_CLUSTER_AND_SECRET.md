@@ -95,7 +95,7 @@ kind get clusters
 ![screens/2.2_start_after_create_cluster_secret.png](../screens/2.2_start_after_create_cluster_secret.png)
 
 ### Перевірка `kubectl get/describe secret regcred`:
-[screens/2.3_check_regcred.png](../screens/2.3_check_regcred.png)
+![screens/2.3_check_regcred.png](../screens/2.3_check_regcred.png)
 
 ### `pull-test` успішно стягує приватний image
-[screens/2.4_try_pull_image_by_secret.png](../screens/2.4_try_pull_image_by_secret.png)
+![screens/2.4_try_pull_image_by_secret.png](../screens/2.4_try_pull_image_by_secret.png)
