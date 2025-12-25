@@ -12,9 +12,9 @@
 
 ## Документація
 
-1) Docker (репозиторій, білд, пуш, скріни): [DOCKER_STEPS.md](DOCKER_STEPS.md)
-2) Kubernetes (kind кластер + regcred secret + перевірки + скріни): [K8S_CLUSTER_AND_SECRET.md](docs/K8S_CLUSTER_AND_SECRET.md)
-3) Kubernetes (Deployment + Service + перевірки балансування + скріни): [K8S_DEPLOYMENT_AND_SERVICE.md](docs/K8S_DEPLOYMENT_AND_SERVICE.md)
+1) Docker (репозиторій, білд, пуш, скріни): [DOCKER_STEPS.md](./docs/DOCKER_STEPS.md)
+2) Kubernetes (kind кластер + regcred secret + перевірки + скріни): [K8S_CLUSTER_AND_SECRET.md](./docs/K8S_CLUSTER_AND_SECRET.md)
+3) Kubernetes (Deployment + Service + перевірки балансування + скріни): [K8S_DEPLOYMENT_AND_SERVICE.md](./docs/K8S_DEPLOYMENT_AND_SERVICE.md)
 
 ## Вміст репозиторію
 
